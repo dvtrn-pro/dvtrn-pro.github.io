@@ -588,8 +588,8 @@ h1 {
   font-size: 0.74rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--muted);
-  border: 1px solid rgba(255,255,255,0.1);
+  color: rgba(240,237,232,0.75);
+  border: 1px solid rgba(255,255,255,0.25);
   padding: 6px 14px;
   border-radius: 2px;
   transition: border-color 0.3s, color 0.3s, box-shadow 0.3s;
@@ -761,8 +761,8 @@ h1 {
   font-size: 0.74rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--muted);
-  border: 1px solid rgba(255,255,255,0.1);
+  color: rgba(240,237,232,0.75);
+  border: 1px solid rgba(255,255,255,0.25);
   padding: 6px 14px;
   border-radius: 2px;
   transition: border-color 0.3s, color 0.3s, box-shadow 0.3s;
@@ -932,8 +932,8 @@ h1 {
   font-size: 0.68rem;
   letter-spacing: 0.13em;
   text-transform: uppercase;
-  color: var(--muted);
-  border: 1px solid rgba(255,255,255,0.08);
+  color: rgba(240,237,232,0.7);
+  border: 1px solid rgba(255,255,255,0.22);
   padding: 4px 10px;
   border-radius: 2px;
 }
