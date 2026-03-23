@@ -547,7 +547,7 @@ h1 {
 
 .about-stats {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
 
@@ -785,6 +785,10 @@ h1 {
   align-items: flex-end;
   justify-content: space-between;
   margin-bottom: 64px;
+}
+
+.projects-label {
+  margin-bottom: 16px;
 }
 
 .projects-heading {
@@ -1057,7 +1061,7 @@ h1 {
   .about { padding: 80px 24px 140px; }
   .about-grid { grid-template-columns: 1fr; gap: 40px; }
   .about-number { display: none; }
-  .about-stats { grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .about-stats { grid-template-columns: repeat(2, 1fr); gap: 16px; }
   .stat-value { font-size: 1.8rem; }
 
   .projects { padding: 80px 24px 140px; }
@@ -1074,7 +1078,7 @@ h1 {
 @media (max-width: 480px) {
   .hero-eyebrow { font-size: 0.7rem; }
   .hero-socials { flex-wrap: wrap; }
-  .about-stats { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .about-stats { grid-template-columns: repeat(2, 1fr); gap: 10px; }
   .stat-value { font-size: 1.5rem; }
   .stat-label { font-size: 0.62rem; letter-spacing: 0.1em; }
   .about-tags { gap: 6px; }
