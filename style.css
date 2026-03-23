@@ -602,6 +602,20 @@ h1 {
 }
 
 /* ── PROJECTS ── */
+.section-index {
+  position: absolute;
+  top: 40px;
+  right: 56px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: 11rem;
+  line-height: 1;
+  color: rgba(255,255,255,0.03);
+  letter-spacing: -0.02em;
+  user-select: none;
+  z-index: 0;
+}
+
 .projects {
   background: var(--bg);
   padding: 120px 48px 160px;
