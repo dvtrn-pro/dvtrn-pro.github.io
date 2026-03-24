@@ -117,7 +117,7 @@ nav.scrolled {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 0 48px 140px;
+  padding: 0 48px 140px 8%;
   position: relative;
   overflow: hidden;
 }
@@ -432,7 +432,7 @@ h1 {
 /* ── ABOUT ── */
 .about {
   background: var(--bg);
-  padding: 72px 48px;
+  padding: 72px 48px 72px 8%;
   position: relative;
   overflow: hidden;
 }
@@ -442,8 +442,8 @@ h1 {
 }
 
 .about-inner {
-  max-width: 860px;
-  margin-left: 0;
+  max-width: 1200px;
+  margin-left: auto;
   margin-right: auto;
   position: relative;
   z-index: 1;
@@ -591,7 +591,7 @@ h1 {
 /* ── EXPERIENCE ── */
 .experience {
   background: var(--bg);
-  padding: 72px 48px 100px;
+  padding: 72px 8% 100px;
   position: relative;
   overflow: hidden;
 }
@@ -606,9 +606,9 @@ h1 {
 }
 
 .experience-inner {
-  max-width: 860px;
+  max-width: 1200px;
   margin-left: auto;
-  margin-right: 0;
+  margin-right: auto;
   position: relative;
   z-index: 1;
 }
@@ -715,13 +715,6 @@ h1 {
   .exp-company-row { flex-direction: column; gap: 4px; }
   .exp-role-meta { flex-direction: column; align-items: flex-start; gap: 6px; }
   .exp-date { margin-left: 0; }
-  .about-inner,
-  .experience-inner,
-  .projects-inner {
-    max-width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
 }
 
 /* ── TOOLS & PLATFORMS ── */
@@ -776,21 +769,16 @@ h1 {
   z-index: 0;
 }
 
-.section-index.left {
-  right: auto;
-  left: 56px;
-}
-
 .projects {
   background: var(--bg);
-  padding: 72px 48px 100px;
+  padding: 72px 8% 100px;
   position: relative;
   overflow: hidden;
 }
 
 .projects-inner {
-  max-width: 860px;
-  margin-left: 0;
+  max-width: 1200px;
+  margin-left: auto;
   margin-right: auto;
   position: relative;
   z-index: 1;
