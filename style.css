@@ -479,10 +479,6 @@ h1 {
 
 .about-heading .accent-word {
   color: var(--accent);
-  text-shadow:
-    0 0 40px rgba(232, 213, 163, 0.5),
-    0 0 100px rgba(232, 213, 163, 0.2);
-  animation: glowFlicker 6s ease-in-out infinite;
 }
 
 .about-number {
