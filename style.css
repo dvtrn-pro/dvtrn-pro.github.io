@@ -443,8 +443,6 @@ h1 {
 
 .about-inner {
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
   z-index: 1;
 }
@@ -607,8 +605,6 @@ h1 {
 
 .experience-inner {
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
   z-index: 1;
 }
@@ -778,8 +774,6 @@ h1 {
 
 .projects-inner {
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
   z-index: 1;
 }
