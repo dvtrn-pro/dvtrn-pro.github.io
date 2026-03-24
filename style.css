@@ -354,15 +354,6 @@ h1 {
   margin-top: -1px;
 }
 
-.about-fade {
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 180px;
-  background: linear-gradient(to bottom, transparent, var(--bg));
-  pointer-events: none;
-  z-index: 2;
-}
-
 /* ── SCROLL REVEAL ── */
 .reveal {
   opacity: 0;
