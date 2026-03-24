@@ -21,20 +21,6 @@ body {
   overflow-x: hidden;
 }
 
-#meshCanvas {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  z-index: 0;
-  pointer-events: none;
-  opacity: 0.55;
-}
-
-body > *:not(#meshCanvas) {
-  position: relative;
-  z-index: 1;
-}
-
 /* ── NAV ── */
 nav {
   position: fixed;
@@ -45,10 +31,16 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0 48px;
-  background: rgba(26,26,26,0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  background: rgba(26,26,26,0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  transition: background 0.3s;
+}
+
+nav.scrolled {
+  background: rgba(17,17,17,0.98);
+  border-bottom-color: rgba(255,255,255,0.07);
 }
 
 .nav-logo {
@@ -353,7 +345,7 @@ h1 {
   position: absolute;
   bottom: 0; left: 0; right: 0;
   height: 180px;
-  background: linear-gradient(to bottom, transparent, var(--bg2));
+  background: linear-gradient(to bottom, transparent, var(--bg));
   pointer-events: none;
   z-index: 2;
 }
@@ -439,7 +431,7 @@ h1 {
 
 /* ── ABOUT ── */
 .about {
-  background: var(--bg2);
+  background: var(--bg);
   padding: 72px 48px;
   position: relative;
   overflow: hidden;
@@ -617,7 +609,7 @@ h1 {
 
 /* ── EXPERIENCE ── */
 .experience {
-  background: var(--bg2);
+  background: var(--bg);
   padding: 72px 48px 100px;
   position: relative;
   overflow: hidden;
@@ -1022,30 +1014,45 @@ h1 {
 .nav-mobile-menu {
   display: none;
   position: fixed;
-  inset: 0;
-  background: rgba(17,17,17,0.97);
+  top: var(--nav-h);
+  left: 0; right: 0;
+  background: rgba(17,17,17,0.98);
   backdrop-filter: blur(16px);
-  z-index: 150;
+  -webkit-backdrop-filter: blur(16px);
+  z-index: 99;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
+  padding: 16px 0 24px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 
 .nav-mobile-menu.open { display: flex; }
 
 .nav-mobile-menu a {
   font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 800;
-  font-size: 3rem;
-  letter-spacing: 0.06em;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--text);
+  color: rgba(240,237,232,0.7);
   text-decoration: none;
-  transition: color 0.2s;
+  padding: 12px 24px;
+  transition: color 0.2s, background 0.2s;
 }
 
-.nav-mobile-menu a:hover { color: var(--accent); }
+.nav-mobile-menu a:hover {
+  color: var(--accent);
+  background: rgba(255,255,255,0.03);
+}
+
+.nav-mobile-menu .mobile-divider {
+  height: 1px;
+  background: rgba(255,255,255,0.06);
+  margin: 8px 24px;
+}
+
+.nav-mobile-menu .mobile-social {
+  color: var(--accent);
+}
 
 /* ── KEYFRAMES ── */
 @keyframes fadeDown {
