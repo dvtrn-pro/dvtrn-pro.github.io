@@ -115,7 +115,7 @@ nav {
   flex-shrink: 0;
   display: grid;
   grid-template-columns: 1fr 280px;
-  align-items: end;
+  align-items: center;
   gap: 64px;
   padding: 48px;
   position: relative;
@@ -251,6 +251,7 @@ h1 {
 }
 
 /* section anchor offset for sticky nav */
+.hero,
 .about,
 .projects {
   scroll-margin-top: var(--nav-h);
@@ -494,6 +495,8 @@ h1 {
 
 .about-inner {
   max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
   position: relative;
   z-index: 1;
 }
@@ -820,6 +823,8 @@ h1 {
 
 .projects-inner {
   max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
   position: relative;
   z-index: 1;
 }
