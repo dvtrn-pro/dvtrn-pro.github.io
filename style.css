@@ -116,7 +116,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 48px;
+  padding: 80px 48px 48px;
   position: relative;
   overflow: hidden;
 }
@@ -1119,7 +1119,7 @@ h1 {
 
   .hero {
     height: auto;
-    padding: 40px 24px 64px;
+    padding: 64px 24px 64px;
   }
 
   .hero-meta { gap: 16px; margin-top: 24px; }
