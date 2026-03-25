@@ -524,16 +524,6 @@ h1 {
   color: var(--accent);
 }
 
-.about-number {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 900;
-  font-size: 9rem;
-  line-height: 1;
-  color: rgba(255,255,255,0.03);
-  letter-spacing: -0.02em;
-  user-select: none;
-  margin-top: 12px;
-}
 
 .about-right {
   display: flex;
@@ -850,7 +840,7 @@ h1 {
 .project-card {
   position: relative;
   display: grid;
-  grid-template-columns: 80px 1fr auto;
+  grid-template-columns: 1fr auto;
   align-items: center;
   gap: 40px;
   padding: 36px 0;
@@ -877,14 +867,6 @@ h1 {
   opacity: 1;
 }
 
-.project-num {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
-  font-size: 0.72rem;
-  letter-spacing: 0.2em;
-  color: var(--accent);
-  opacity: 0.6;
-}
 
 .project-body {
   display: flex;
@@ -1017,6 +999,9 @@ h1 {
   cursor: pointer;
   padding: 4px;
   z-index: 200;
+  background: none;
+  border: none;
+  outline: none;
 }
 
 .nav-hamburger span {
@@ -1046,7 +1031,10 @@ h1 {
   border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 
-.nav-mobile-menu.open { display: flex; }
+.nav-mobile-menu.open {
+  display: flex;
+  animation: fadeDown 0.2s ease forwards;
+}
 
 .nav-mobile-menu a {
   font-family: 'Barlow Condensed', sans-serif;
@@ -1120,7 +1108,7 @@ h1 {
 /* ── TABLET (max 1024px) ── */
 @media (max-width: 1024px) {
   .about-grid { gap: 48px; }
-  .project-card { grid-template-columns: 60px 1fr auto; gap: 28px; }
+  .project-card { grid-template-columns: 1fr auto; gap: 28px; }
 }
 
 /* ── MOBILE (max 768px) ── */
@@ -1130,7 +1118,8 @@ h1 {
   .nav-hamburger { display: flex; }
 
   .hero {
-    padding: 40px 24px 32px;
+    height: auto;
+    padding: 40px 24px 64px;
   }
 
   .hero-meta { gap: 16px; margin-top: 24px; }
@@ -1140,7 +1129,7 @@ h1 {
   .about-grid { grid-template-columns: 1fr; gap: 32px; }
   .about { padding: 56px 24px 80px; }
   .projects { padding: 56px 24px 80px; }
-  .project-card { grid-template-columns: 48px 1fr; gap: 16px; }
+  .project-card { grid-template-columns: 1fr; gap: 16px; }
   .project-arrow { display: none; }
 
   .footer { padding: 24px; }
