@@ -98,8 +98,8 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  padding: 0 48px 52px;
+  justify-content: flex-start;
+  padding: 48px 48px 40px;
   position: relative;
   overflow: hidden;
 }
@@ -1064,7 +1064,7 @@ h1 {
   nav { padding: 0 24px; }
 
   .hero {
-    padding: 0 24px 40px;
+    padding: 32px 24px 32px;
   }
   .hero-index { font-size: 5rem; right: 24px; }
   .hero-hr { left: 24px; right: 24px; }
