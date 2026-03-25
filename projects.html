@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects — Dennis Tran</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;700;800;900&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">Dennis Tran</a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#">Resume</a>
+    </div>
+    <button class="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-mobile-menu">
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <div class="mobile-divider"></div>
+    <a href="#" class="mobile-social">Resume ↓</a>
+  </div>
+
+  <!-- PROJECTS -->
+  <main class="projects">
+    <div class="projects-inner">
+      <div class="projects-header">
+        <div>
+          <p class="section-label projects-label">Selected Work</p>
+          <h2 class="projects-heading">Projects</h2>
+        </div>
+        <span class="projects-count">04 Projects</span>
+      </div>
+
+      <div class="project-list">
+
+        <div class="project-card">
+          <span class="project-num">01</span>
+          <div class="project-body">
+            <h3 class="project-title">Home Lab SOC</h3>
+            <p class="project-desc">
+              Built a full security operations environment at home using Proxmox, running
+              Splunk SIEM, Wazuh IDS, and a vulnerable VM range for continuous threat detection practice.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Splunk</span>
+              <span class="project-tag">Wazuh</span>
+              <span class="project-tag">Proxmox</span>
+              <span class="project-tag">SIEM</span>
+            </div>
+          </div>
+          <span class="project-arrow">↗</span>
+        </div>
+
+        <div class="project-card">
+          <span class="project-num">02</span>
+          <div class="project-body">
+            <h3 class="project-title">Phishing Simulation Platform</h3>
+            <p class="project-desc">
+              Developed an internal phishing awareness platform using GoPhish, including
+              custom email templates, landing pages, and reporting dashboards for security training campaigns.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">GoPhish</span>
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Social Engineering</span>
+            </div>
+          </div>
+          <span class="project-arrow">↗</span>
+        </div>
+
+        <div class="project-card">
+          <span class="project-num">03</span>
+          <div class="project-body">
+            <h3 class="project-title">Vulnerability Scanner Automation</h3>
+            <p class="project-desc">
+              Automated Nessus scan scheduling, report parsing, and ticket creation in Jira
+              using Python scripts — reducing manual effort for weekly vulnerability assessments.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Nessus</span>
+              <span class="project-tag">Jira API</span>
+              <span class="project-tag">Automation</span>
+            </div>
+          </div>
+          <span class="project-arrow">↗</span>
+        </div>
+
+        <div class="project-card">
+          <span class="project-num">04</span>
+          <div class="project-body">
+            <h3 class="project-title">CTF Write-ups</h3>
+            <p class="project-desc">
+              Documented solutions and methodologies from various CTF competitions covering
+              web exploitation, binary analysis, cryptography, and OSINT challenges.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">CTF</span>
+              <span class="project-tag">Web Exploitation</span>
+              <span class="project-tag">Reverse Engineering</span>
+              <span class="project-tag">OSINT</span>
+            </div>
+          </div>
+          <span class="project-arrow">↗</span>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-name">Dennis Tran</span>
+      <span class="footer-copy">© 2025</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
